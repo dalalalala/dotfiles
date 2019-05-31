@@ -128,3 +128,7 @@ export FZF_DEFAULT_COMMAND="fd --exclude={.git,.idea,.vscode,.sass-cache,node_mo
 
 export MANPATH=/usr/share/man
 export PAGER="most"
+
+__git_files () {
+    _wanted files expl 'local files' _files
+}
