@@ -128,7 +128,10 @@ export FZF_DEFAULT_COMMAND="fd --exclude={.git,.idea,.vscode,.sass-cache,node_mo
 
 export MANPATH=/usr/share/man
 export PAGER="most"
+export PATH=/home/dalalalala/.gem/ruby/2.6.0/bin:$PATH
 
 __git_files () {
     _wanted files expl 'local files' _files
 }
+
+export https_proxy="socks5://127.0.0.1:1080"

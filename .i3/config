@@ -189,7 +189,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # assign [class="Skype"] $ws5
 assign [class="netease-cloud-music"] $ws6
 assign [class="vlc"] $ws6
-assign [class="shadowsocks-qt5"] $ws5
+assign [class="electron-ssr"] $ws5
 assign [class="Electronic WeChat"] $ws5
 
 # Open specific applications in floating mode
@@ -287,7 +287,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-exec --no-startup-id shadowsocks-qt5
+exec_always --no-startup-id electron-ssr
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
