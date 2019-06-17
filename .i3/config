@@ -191,6 +191,8 @@ assign [class="netease-cloud-music"] $ws6
 assign [class="vlc"] $ws6
 assign [class="electron-ssr"] $ws5
 assign [class="Electronic WeChat"] $ws5
+assign [class="GoldenDict"] $ws4
+assign [class="TelegramDesktop"] $ws5
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -441,11 +443,11 @@ exec_always compton -f
 exec_always xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output DP2 --off --output HDMI1 --mode 1920x1080 --pos 1920x0 --rotate normal --output VIRTUAL1 --off
 
 
-workspace 1 output primary
-workspace 2 output primary
-workspace 3 output primary
-workspace 4 output primary
-workspace 5 output primary
-workspace 6 output primary
-workspace 7 output HDMI1
-workspace 8 output HDMI1
+workspace $ws1 output primary
+workspace $ws2 output primary
+workspace $ws3 output primary
+workspace $ws4 output primary
+workspace $ws5 output primary
+workspace $ws6 output primary
+workspace $ws7 output HDMI1
+workspace $ws8 output HDMI1
